@@ -1,0 +1,26 @@
+.nosotrosAdmin-container {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 25px;
+    margin-top: 50px;
+    width: 90%;
+    max-width: 1000px;
+}
+
+.nosotrosAdmin-textarea {
+    resize: none;
+    min-height: 80px !important;
+}
+
+.nosotrosAdmin-heading {
+    color: #4A154B;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+@media(max-width: 380px) {
+    .nosotrosAdmin-heading {
+        font-size: 24px;
+    }
+}

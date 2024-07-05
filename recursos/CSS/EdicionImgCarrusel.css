@@ -1,0 +1,79 @@
+.edicionCarr-container {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 25px;
+    width: 100%;
+    max-width: 900px;
+    margin: 40px auto;
+}
+
+.edicionCarr-heading {
+    color: #4A154B;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.form-groupCustom {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.customForm-control-lg {
+    border-radius: 5px;
+    border: 2px solid #D3BCC0;
+    font-size: 16px;
+    padding: 10px;
+}
+
+.edicionCarr-card {
+    border: none;
+    background: none;
+    text-align: center;
+}
+
+.img-thumbnail {
+    border: 2px solid #D3BCC0;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.btn-success-custom {
+    background: #4A154B;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 18px;
+    text-align: center;
+    width: 100%;
+    max-width: 150px;
+    text-transform: uppercase;
+}
+
+.btn-success-custom:hover{
+    background: #36103B;
+}
+
+.btn-success-custom:active, .btn-success-custom:focus-visible{
+    background: #36103B !important;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+@media(max-width: 600px) {
+    .btn-success-custom {
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 16px;
+    }
+}

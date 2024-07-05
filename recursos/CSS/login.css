@@ -1,0 +1,138 @@
+:root {
+    --login-primary-color: #E62E2E;
+    --login-secondary-color: #00345E;
+    --login-background-color: #f7f9fc;
+    --login-accent-color: #026b60;
+    --login-highlight-color: #c92626;
+    --login-shadow-light: 0 4px 15px rgba(0, 0, 0, 0.1);
+    --login-shadow-dark: 0 4px 20px rgba(0, 0, 0, 0.25);
+    --login-container-background: #081F7C;
+}
+
+.login-container {
+    max-width: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--login-container-background);
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: var(--login-shadow-dark);
+}
+
+.login-logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 50%;
+    width: 140px;
+    height: 140px;
+    margin-bottom: 30px;
+}
+
+.login-logo {
+    width: 120px;
+    height: auto;
+}
+
+.login-input-group {
+    position: relative;
+    margin: 25px 0;
+    width: 100%;
+}
+
+.login-icon {
+    position: absolute;
+    left: 15px;
+    transform: translateY(100%);
+    color: var(--login-background-color);
+    width: 20px;
+    height: 20px;
+}
+
+.login-input[type="text"],
+.login-input[type="password"] {
+    width: 100%;
+    padding: 15px 50px;
+    border: 2px solid var(--login-secondary-color);
+    border-radius: 15px;
+    background-color: var(--login-background-color);
+    transition: border-color 0.3s;
+}
+
+.login-input[type="text"]:focus,
+.login-input[type="password"]:focus {
+    outline: none;
+}
+
+#showPassLabel {
+    margin-top: 5px;
+    color: #fff;
+}
+
+.login-button {
+    width: 100%;
+    padding: 15px;
+    background-color: var(--login-primary-color);
+    border: none;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: var(--login-shadow-light);
+}
+
+.login-button:hover {
+    background-color: var(--login-highlight-color);
+    transform: translateY(-2px);
+}
+
+/* Punto de interrupción para tablets */
+@media (max-width: 768px) {
+    .login-container {
+        padding: 30px;
+    }
+
+    .login-logo-container {
+        width: 100px;
+        height: 100px;
+    }
+
+    .login-logo {
+        width: 80px;
+    }
+
+    .login-input-group {
+        margin: 15px 0;
+    }
+
+    .login-button {
+        padding: 15px;
+        font-size: 16px;
+    }
+}
+
+/* Punto de interrupción para móviles */
+@media (max-width: 480px) {
+    .login-logo-container {
+        width: 80px;
+        height: 80px;
+    }
+
+    .login-logo {
+        width: 60px;
+    }
+
+    .login-icon {
+        width: 16px;
+        height: 16px;
+    }
+
+    .login-input[type="text"],
+    .login-input[type="password"] {
+        padding: 15px 40px;
+    }
+}

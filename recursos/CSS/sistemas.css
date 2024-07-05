@@ -1,0 +1,180 @@
+#sistemasSection h2 {
+    text-align: center;
+    margin-top: 20px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #000;
+}
+
+#sistemasContainer {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    padding: 0;
+}
+
+.sistema {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+    width: calc(25% - 20px);
+}
+
+.sistema img {
+    max-width: 100%;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    padding: 10px;
+    background: #fff;
+    margin-bottom: 8px;
+    transition: transform 0.3s ease;
+}
+
+.sistema img:hover {
+    transform: scale(1.05);
+}
+
+.sistema p {
+    color: #666;
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+/* Responsividad */
+@media (max-width: 1200px) {
+    .sistema {
+        width: calc(33.333% - 20px);
+        /* 3 columnas para pantallas medianas */
+    }
+}
+
+@media (max-width: 900px) {
+    .sistema {
+        width: calc(50% - 20px);
+        /* 2 columnas para pantallas pequeñas */
+    }
+}
+
+@media (max-width: 600px) {
+    .sistema {
+        width: calc(100% - 20px);
+        /* 1 columna para pantallas muy pequeñas */
+    }
+}
+
+/* CSS del filtro */
+.Container-sistemas-filtro {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    padding: 0;
+}
+
+.form-select-custom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Añade un espacio entre los elementos */
+    width: 50%; /* Asegura que ocupe todo el ancho disponible */
+}
+
+.form-select-custom form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Añade un espacio entre los elementos del formulario */
+}
+
+.form-select-custom label {
+    margin-right: 10px; /* Añade un pequeño margen a la derecha del label */
+}
+
+.form-select-custom select {
+    width: auto; /* Ajusta el ancho automáticamente según el contenido */
+}
+
+.form-select-custom button {
+    width: auto; /* Ajusta el ancho automáticamente según el contenido */
+}
+
+/* Estilo para el label */
+.label-filtro-sistemas {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Estilo para el select */
+select.sistemas-filter-select:hover {
+    cursor:pointer;
+}
+select.sistemas-filter-select {
+    padding: 10px;
+    font-size: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Estilo para el botón */
+button.sistemas-filter-btn {
+    padding: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button.sistemas-filter-btn:hover {
+    background-color: #3e8e41;
+}
+
+/* Estilo responsivo para pantallas pequeñas */
+@media screen and (max-width: 600px) {
+    .form-select-custom {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .form-select-custom select,
+    .form-select-custom button {
+        width: 100%;
+    }
+}
+
+/* Ajustes para la miniatura del video */
+.card-img-mini {
+    max-width: 300px; /* Ajusta el tamaño máximo de la miniatura */
+    margin: 0 auto; /* Centra la miniatura */
+    overflow: hidden;
+}
+
+.card-img-mini img {  
+    width: 100%;
+    height: auto; /* Mantiene la proporción de la imagen */
+    object-fit: cover;
+    display: block;
+    border: none;
+}
+
+
+/* Estilo responsivo para pantallas pequeñas */
+@media screen and (max-width: 600px) {
+    .form-select-custom {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .form-select-custom select,
+    .form-select-custom button {
+        width: 100%;
+    }
+}

@@ -1,0 +1,12 @@
+.btn-faq {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 5px;
+}
+
+.faq-th {
+    text-align: center;
+}

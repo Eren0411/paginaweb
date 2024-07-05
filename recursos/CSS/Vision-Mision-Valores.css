@@ -1,0 +1,43 @@
+.mision-container {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 25px;
+    width: 100%;
+    max-width: 1000px;
+    margin: 40px auto;
+}
+
+.mision-container h3 {
+    color: #4A154B;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.mision-textarea {
+    padding: 15px;
+    border: 2px solid #D3BCC0;
+    border-radius: 5px;
+    font-size: 16px;
+    height: 300px;
+    resize: none;
+}
+
+.btn-mision {
+    background: #4A154B;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block;
+    width: 100%;
+    max-width: 100px;
+    margin: 20px auto;
+}
+
+.btn-mision:hover {
+    background-color: #36103B;
+}

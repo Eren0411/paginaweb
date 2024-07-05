@@ -1,0 +1,40 @@
+.footer {
+    margin-top: 50px;
+    padding-bottom: 10px;
+}
+
+.footer-fondo {
+    background-color: #081F7C;
+    color: white;
+}
+
+.footer-heading {
+    padding-bottom: 5px;
+    border-bottom: 2px solid #fff;
+}
+
+.footer-link a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-link a:hover {
+    color: #cccccc;
+    text-decoration: underline;
+}
+
+.footer .btn {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.footer .btn:hover {
+    opacity: 0.8;
+}
+
+@media(min-width: 768px){
+    .col-custom{
+        width: 50%;
+    }
+}

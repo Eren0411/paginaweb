@@ -1,0 +1,61 @@
+.contacto-footer-container {
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    width: 90%;
+    max-width: 700px;
+    margin-top: 40px;
+}
+
+#contacto-footer h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #4A154B;
+    font-size: 28px;
+}
+
+.contacto-footer-group {
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contactoFooter-label {
+    font-size: 16px;
+    color: #4A154B;
+    margin-bottom: 10px;
+}
+
+.contactoFooter-input {
+    padding: 15px;
+    border: 2px solid #D3BCC0;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contactoFooter-button {
+    background: #4A154B;
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+    font-size: 18px;
+    margin-top: 20px;
+    display: block;
+    width: 100%;
+}
+
+.contactoFooter-button:hover {
+    background-color: #36103B;
+}
+
+/* Ajustes responsivos */
+@media (max-width: 768px) {
+    .contacto-footer-container {
+        padding: 20px;
+    }
+}

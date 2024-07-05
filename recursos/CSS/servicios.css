@@ -1,0 +1,176 @@
+.service-card {
+    height: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: column; 
+    overflow: hidden; /* Se agrega para evitar que los botones se salgan de la card*/
+}
+
+.service-card-img-top {
+    height: 60%;
+    object-fit: cover;
+}
+
+.service-card-body {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px; /* Un poco de padding para espaciar el contenido */
+}
+
+.service-card-title {
+    text-align: center;
+    margin-bottom: 10px; /* Margen pequeño inferior para separar el título de los botones */
+}
+
+.service-button-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los botones se vayan a la siguiente línea si es necesario */
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.service-button-container .service-btn {
+    flex: 1 1 calc(33.33% - 10px); /* Ajusta el tamaño de los botones para que quepan 3 por fila */
+    margin: 5px;
+    text-align: center;
+    padding: 10px;   /* Añade padding para mejorar la apariencia de los botones */
+    box-sizing: border-box; /* Asegura que el padding no afecte el tamaño total del botón */
+}
+
+.service-button-container .service-btn:last-child {
+    margin-right: 0;
+}
+
+.servicios-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+    width: 90%;
+}
+
+.servicios-filter-bar {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    align-items: center;
+    background-color: #4A154B;
+    color: #f9f9f9;
+    padding: 20px 25px;
+    border-radius: 12px;
+}
+
+.servicios-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.servicio-item {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.servicio-item:hover {
+    transform: translateY(-5px);
+}
+
+.servicio-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid #ccc;
+}
+
+.servicio-info {
+    padding: 15px;
+    text-align: center;
+}
+
+.servicio-title {
+    margin: 0 0 10px 0;
+    color: #333;
+    font-size: 20px;
+}
+
+.servicio-description {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.servicio-price {
+    font-size: 16px;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.servicio-input {
+    width: 60%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.servicio-button {
+    margin-left: 10px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: #4A154B;
+    color: #f9f9f9;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color .2s ease, transform 0.2s ease;
+}
+
+.servicio-button:hover {
+    background-color: #3B0F3C;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 1024px) {
+    .servicios-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .servicios-filter-bar {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .servicio-input {
+        width: auto;
+        margin-bottom: 10px;
+    }
+
+    .servicios-grid {
+        grid-template-columns: 1fr;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .servicio-item {
+        flex-direction: column;
+    }
+
+    .servicio-image {
+        margin: 0 auto;
+        border: 0;
+    }
+
+    .servicio-info {
+        width: 100%;
+    }
+}
